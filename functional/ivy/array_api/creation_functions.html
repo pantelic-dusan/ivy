@@ -204,33 +204,6 @@
   <div class="section" id="module-ivy.functional.ivy.array_api.creation_functions">
 <span id="creation-functions"></span><h1>Creation functions<a class="headerlink" href="#module-ivy.functional.ivy.array_api.creation_functions" title="Permalink to this headline">¶</a></h1>
 <dl class="py function">
-<dt id="ivy.functional.ivy.array_api.creation_functions.linspace">
-<code class="sig-prename descclassname">ivy.functional.ivy.array_api.creation_functions.</code><code class="sig-name descname">linspace</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">start</span><span class="p">:</span> <span class="n">Union<span class="p">[</span>int<span class="p">, </span>float<span class="p">]</span></span></em>, <em class="sig-param"><span class="n">stop</span><span class="p">:</span> <span class="n">Union<span class="p">[</span>int<span class="p">, </span>float<span class="p">]</span></span></em>, <em class="sig-param"><span class="n">num</span><span class="p">:</span> <span class="n">int</span></em>, <em class="sig-param"><span class="n">dtype</span><span class="p">:</span> <span class="n">Optional<span class="p">[</span>ivy.Dtype<span class="p">]</span></span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">device</span><span class="p">:</span> <span class="n">Optional<span class="p">[</span>ivy.Device<span class="p">]</span></span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">endpoint</span><span class="p">:</span> <span class="n">bool</span> <span class="o">=</span> <span class="default_value">True</span></em><span class="sig-paren">)</span> &#x2192; ivy.array.Array<a class="reference internal" href="../../../_modules/ivy/functional/ivy/array_api/creation_functions.html#linspace"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ivy.functional.ivy.array_api.creation_functions.linspace" title="Permalink to this definition">¶</a></dt>
-<dd><p>Returns evenly spaced numbers over a specified interval.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>start</strong> – the start of the interval.</p></li>
-<li><p><strong>stop</strong> – the end of the interval. If endpoint is False, the function must generate a
-sequence of num+1 evenly spaced numbers starting with start and ending with stop and exclude the
-stop from the returned array such that the returned array consists of evenly spaced numbers over the
-half-open interval [start, stop). If endpoint is True, the output array must consist of
-evenly spaced numbers over the closed interval [start, stop]. Default: True.</p></li>
-<li><p><strong>num</strong> – number of samples. Must be a non-negative integer value;
-otherwise, the function must raise an exception.</p></li>
-<li><p><strong>dtype</strong> – output array data type. If dtype is None, the output array data type must be the
-default floating-point data type. Default: None.</p></li>
-<li><p><strong>device</strong> – device on which to place the created array. Default: None.</p></li>
-<li><p><strong>endpoint</strong> – boolean indicating whether to include stop in the interval. Default: True.</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>a one-dimensional array containing evenly spaced values.</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
 <dt id="ivy.functional.ivy.array_api.creation_functions.ones">
 <code class="sig-prename descclassname">ivy.functional.ivy.array_api.creation_functions.</code><code class="sig-name descname">ones</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">shape</span><span class="p">:</span> <span class="n">Union<span class="p">[</span>int<span class="p">, </span>Tuple<span class="p">[</span>int<span class="p">]</span><span class="p">, </span>List<span class="p">[</span>int<span class="p">]</span><span class="p">]</span></span></em>, <em class="sig-param"><span class="n">dtype</span><span class="p">:</span> <span class="n">Optional<span class="p">[</span>ivy.Dtype<span class="p">]</span></span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">device</span><span class="p">:</span> <span class="n">Optional<span class="p">[</span>ivy.Device<span class="p">]</span></span> <span class="o">=</span> <span class="default_value">None</span></em><span class="sig-paren">)</span> &#x2192; ivy.array.Array<a class="reference internal" href="../../../_modules/ivy/functional/ivy/array_api/creation_functions.html#ones"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ivy.functional.ivy.array_api.creation_functions.ones" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns a new array of given shape and type, filled with ones.</p>
@@ -293,7 +266,6 @@ floating-point data type. Default: None.</p></li>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="creation_functions/zeros.html">zeros</a></li>
 <li class="toctree-l1"><a class="reference internal" href="creation_functions/ones.html">ones</a></li>
-<li class="toctree-l1"><a class="reference internal" href="creation_functions/linspace.html">linspace</a></li>
 <li class="toctree-l1"><a class="reference internal" href="creation_functions/tril.html">tril</a></li>
 </ul>
 </div>

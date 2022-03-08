@@ -240,33 +240,6 @@
     <span class="k">return</span> <span class="n">_cur_framework</span><span class="p">()</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="n">shape</span><span class="p">,</span> <span class="n">dtype</span><span class="p">,</span> <span class="n">device</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="linspace"><a class="viewcode-back" href="../../../../../functional/ivy/array_api/creation_functions/linspace.html#ivy.functional.ivy.array_api.creation_functions.linspace">[docs]</a><span class="k">def</span> <span class="nf">linspace</span><span class="p">(</span><span class="n">start</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">],</span>
-             <span class="n">stop</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">],</span>
-             <span class="n">num</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
-             <span class="n">dtype</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">ivy</span><span class="o">.</span><span class="n">Dtype</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-             <span class="n">device</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">ivy</span><span class="o">.</span><span class="n">Device</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-             <span class="n">endpoint</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span> \
-             <span class="o">-&gt;</span> <span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">:</span>
-    <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Returns evenly spaced numbers over a specified interval.</span>
-
-<span class="sd">    :param start: the start of the interval.</span>
-<span class="sd">    :param stop: the end of the interval. If endpoint is False, the function must generate a</span>
-<span class="sd">                 sequence of num+1 evenly spaced numbers starting with start and ending with stop and exclude the</span>
-<span class="sd">                 stop from the returned array such that the returned array consists of evenly spaced numbers over the</span>
-<span class="sd">                 half-open interval [start, stop). If endpoint is True, the output array must consist of</span>
-<span class="sd">                 evenly spaced numbers over the closed interval [start, stop]. Default: True.</span>
-<span class="sd">    :param num: number of samples. Must be a non-negative integer value;</span>
-<span class="sd">                otherwise, the function must raise an exception.</span>
-<span class="sd">    :param dtype: output array data type. If dtype is None, the output array data type must be the</span>
-<span class="sd">                  default floating-point data type. Default: None.</span>
-<span class="sd">    :param device: device on which to place the created array. Default: None.</span>
-<span class="sd">    :param endpoint: boolean indicating whether to include stop in the interval. Default: True.</span>
-<span class="sd">    :return: a one-dimensional array containing evenly spaced values.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="n">_cur_framework</span><span class="p">()</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">stop</span><span class="p">,</span> <span class="n">num</span><span class="p">,</span> <span class="n">dtype</span><span class="p">,</span> <span class="n">device</span><span class="p">,</span> <span class="n">endpoint</span><span class="p">)</span></div>
-
-  
 <div class="viewcode-block" id="tril"><a class="viewcode-back" href="../../../../../functional/ivy/array_api/creation_functions/tril.html#ivy.functional.ivy.array_api.creation_functions.tril">[docs]</a><span class="k">def</span> <span class="nf">tril</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">NativeArray</span><span class="p">],</span>
          <span class="n">k</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> \
          <span class="o">-&gt;</span> <span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">:</span>
