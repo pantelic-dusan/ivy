@@ -19,7 +19,6 @@ General
    general/argmin.rst
    general/cast.rst
    general/arange.rst
-   general/linspace.rst
    general/logspace.rst
    general/concatenate.rst
    general/unstack.rst
